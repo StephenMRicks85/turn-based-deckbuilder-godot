@@ -1,4 +1,5 @@
 # Turn-Based Deck-Building Game (Godot)
+<img width="1168" height="669" alt="cardGame" src="https://github.com/user-attachments/assets/4ad6dc4d-3cf0-4a02-817c-b87e3053bc6d" />
 
 ## Overview
 A single-player, turn-based deck-building game built in **Godot 4** using **GDScript**.  
