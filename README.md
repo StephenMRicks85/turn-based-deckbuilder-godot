@@ -41,5 +41,11 @@ This repository serves as a systems-focused prototype demonstrating scalable arc
 
 ---
 
-## Project Structure (Simplified)
+## Code Tour (Start Here)
+- `game_state.gd` — global state + run progression
+- `combat_scene.gd` — turn resolution and action pipeline
+- `card_pool.gd` — card generation / selection logic
+- `improvise_modal.gd` — example of UI-driven gameplay effect
+- `dialog_scene.gd` + `/dialogues` — JSON dialogue system
+
 
