@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://ckt4ermeupkkf"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_k85m7"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_6854g"]
+
+[resource]
+script = ExtResource("2_6854g")
+id = "\"legal\""
+display_name = "Legal Precedent"
+description = "Deal 6 damage to a single enemy argument"
+energy_cost = 0
+damage_amount = 6
+type = "Attack"
+theme = "Evidence"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_k85m7")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

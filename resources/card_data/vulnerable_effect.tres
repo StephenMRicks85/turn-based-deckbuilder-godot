@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VulnerableEffect" load_steps=3 format=3 uid="uid://cf4mta8a23ynq"]
+
+[ext_resource type="Script" uid="uid://x2wqm8mv5mrg" path="res://resources/card_data/vulnerable_effect.gd" id="1_cq4v7"]
+[ext_resource type="Texture2D" uid="uid://6i8pqc22u8hb" path="res://icon.svg" id="1_dhpwm"]
+
+[resource]
+script = ExtResource("1_cq4v7")
+damage_multiplier = 1.5
+id = "vulnerable"
+name = "Vulnerable"
+description = "take 50% more damage"
+icon = ExtResource("1_dhpwm")
+duration = 1
+stacks = 1
+metadata/_custom_type_script = "uid://suvx3q01iign"

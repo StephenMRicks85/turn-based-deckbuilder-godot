@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=4 format=3 uid="uid://bwtj224rjv4pm"]
+
+[ext_resource type="PackedScene" uid="uid://sypkde2dh03l" path="res://scenes/combat_scene.tscn" id="1_318cl"]
+[ext_resource type="Texture2D" uid="uid://d1rjhpkl480q3" path="res://intent_attack.png" id="1_e78wm"]
+[ext_resource type="Script" uid="uid://dcbh4nag5ydxk" path="res://resources/EncounterData.gd" id="1_kqjd7"]
+
+[resource]
+script = ExtResource("1_kqjd7")
+title = "Dialog"
+type = "combat"
+scene = ExtResource("1_318cl")
+icon = ExtResource("1_e78wm")
+is_boss = false
+metadata/_custom_type_script = "uid://dcbh4nag5ydxk"

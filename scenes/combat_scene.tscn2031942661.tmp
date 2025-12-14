@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://sypkde2dh03l"]
+
+[ext_resource type="Script" uid="uid://c4r1hrx8qu7ow" path="res://combat_scene.gd" id="1_ik0t7"]
+[ext_resource type="Script" uid="uid://cvwc8gnd4e4fy" path="res://scenes/player_hand.gd" id="2_ofoda"]
+
+[node name="CombatScene" type="Node2D"]
+script = ExtResource("1_ik0t7")
+
+[node name="PlayerHand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ofoda")
+metadata/_custom_type_script = "uid://cvwc8gnd4e4fy"

@@ -1,0 +1,49 @@
+{
+	"start": "greet",
+	"nodes": 
+		{"end": {
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Farewell."
+		},
+		"help": {
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Here, take this."
+		},
+		"greet": {
+			"choices": [
+				{
+					"next": "who",
+					"text": "Who are you?"
+				},
+				{
+					"next": "end",
+					"text": "Leave"
+				}
+			],
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Welcome, stranger."
+		},
+		"who": {
+			"choices": [
+				{
+					"condition": "",
+					"effect": "",
+					"next": "help",
+					"text": "Yes"
+				},
+				{
+					"condition": "",
+					"effect": "",
+					"next": "end",
+					"text": "No, Thanks"
+				}
+			],
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Just a traveler.  Do you need something?"
+		}
+	}
+}

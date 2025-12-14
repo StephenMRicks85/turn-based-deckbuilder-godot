@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddsmhl70oecwr"]
+
+[ext_resource type="Script" uid="uid://crg7vob0xa2pd" path="res://world_map.gd" id="1_oru6e"]
+[ext_resource type="Texture2D" uid="uid://d1rjhpkl480q3" path="res://intent_attack.png" id="2_qqero"]
+
+[node name="WorldMap" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_oru6e")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EncounterContainer" type="Node2D" parent="."]
+
+[node name="EncounterTemplate" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("2_qqero")

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://cpjtvqbcehyjg"]
+
+[ext_resource type="Resource" uid="uid://2whsw7kwkvdy" path="res://resources/card_data/fortify_effect.tres" id="1_ky1dd"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_ocekw"]
+
+[resource]
+script = ExtResource("2_ocekw")
+id = "\"fortify\""
+display_name = "Fortify"
+description = "Apply 5 defense"
+energy_cost = 1
+damage_amount = 5
+target = "self"
+type = "Skill"
+theme = "Defensive"
+rarity = "\"Common\""
+requires_target = false
+effect = ExtResource("1_ky1dd")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

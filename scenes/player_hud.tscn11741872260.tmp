@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw3pa13sil1yw"]
+
+[ext_resource type="Script" uid="uid://84fcatq3xa4" path="res://player_hud.gd" id="1_mlvnn"]
+
+[node name="PlayerHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -568.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mlvnn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="HPLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "HP: 40 / 40"
+
+[node name="GoldLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Gold: 0"
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = " View Deck "
+
+[node name="DeckViewer" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 52.0
+offset_top = 55.0
+offset_right = 1094.0
+offset_bottom = 604.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DeckViewer"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardGrid" type="GridContainer" parent="DeckViewer/ScrollContainer"]
+layout_mode = 2

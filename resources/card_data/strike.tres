@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bjg25trulijuk"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_n5q8j"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_jwtjv"]
+
+[resource]
+script = ExtResource("2_jwtjv")
+id = "\"strike\""
+display_name = "Strike"
+description = "Deal 6 damage to a single enemy"
+energy_cost = 1
+damage_amount = 6
+type = "Attack"
+theme = ""
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_n5q8j")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

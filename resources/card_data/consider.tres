@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bh44wtfxhoryb"]
+
+[ext_resource type="Resource" uid="uid://dfsgfajxtnr6d" path="res://resources/card_data/draw_effect.tres" id="1_jwjlx"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_vfxwl"]
+
+[resource]
+script = ExtResource("2_vfxwl")
+id = "\"consider\""
+display_name = "Consider"
+description = "Draw 2 cards"
+energy_cost = 1
+damage_amount = 0
+target = "enemy"
+type = "Skill"
+theme = "Evidence"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_jwjlx")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

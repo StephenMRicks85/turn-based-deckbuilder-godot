@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://cxahbmbohusv1"]
+
+[ext_resource type="Script" uid="uid://evavoe4lpfol" path="res://resources/card_data/strike_effect.gd" id="1_dsdyq"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_ss4ck"]
+
+[resource]
+script = ExtResource("2_ss4ck")
+id = "\"defend\""
+display_name = "Defend"
+description = "Apply 5 block"
+energy_cost = 1
+damage_amount = 5
+type = "Skill"
+theme = ""
+rarity = "\"Common\""
+requires_target = false
+effect = ExtResource("1_dsdyq")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

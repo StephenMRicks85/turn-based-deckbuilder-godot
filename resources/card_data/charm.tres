@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bcflyy2n70k16"]
+
+[ext_resource type="Resource" uid="uid://b5c64sxtik55y" path="res://resources/card_data/charm_effect.tres" id="1_blb20"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_nmwsf"]
+
+[resource]
+script = ExtResource("2_nmwsf")
+id = "\"charm\""
+display_name = "Charm Offensive"
+description = "apply vulnerable to target"
+energy_cost = 0
+damage_amount = 0
+type = "Skill"
+theme = "Charisma"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_blb20")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

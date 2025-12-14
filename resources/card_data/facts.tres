@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bfyel2rjtx6od"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_ch7v2"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_dgbd2"]
+
+[resource]
+script = ExtResource("2_dgbd2")
+id = "\"facts\""
+display_name = "Facts"
+description = "Deal 6 damage to a single enemy argument"
+energy_cost = 1
+damage_amount = 6
+type = "Attack"
+theme = "Evidence"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_ch7v2")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

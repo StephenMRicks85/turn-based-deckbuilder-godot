@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://chskcesey6onw"]
+
+[ext_resource type="Script" uid="uid://bfy7xwp25ufda" path="res://shop_card_slot.gd" id="1_vqv5u"]
+
+[node name="ShopCardSlot" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 165.0
+offset_bottom = 255.0
+size_flags_horizontal = 3
+script = ExtResource("1_vqv5u")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 165.0
+offset_bottom = 255.0
+mouse_filter = 2
+
+[node name="CostLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 218.0
+offset_right = 107.0
+offset_bottom = 241.0
+text = "50"
+
+[node name="GrayOverlay" type="ColorRect" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.580392, 0.580392, 0.580392, 0.843137)
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -7.0
+offset_top = 192.0
+offset_right = 217.0
+offset_bottom = 245.0
+rotation = -0.811578
+theme_override_colors/font_color = Color(0.899202, 0.0550434, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 34
+text = "PURCHASED"

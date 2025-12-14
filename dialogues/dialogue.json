@@ -1,0 +1,90 @@
+{
+	"start": "greet",
+	"nodes": 
+		{"goodbye": {
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Farewell.",
+			"next": "end"
+		},
+		"greet": {
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Hello.",
+			"next": "pre-question"
+		},
+		"help2": {
+			"speaker": "player",
+			"position": "left",
+			"text": "Oh, Thanks.",
+			"next": "goodbye"
+		},
+		"help": {
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Here, take this.",
+			"next": "help2"
+		},
+		"pre-question": {
+			"next": "spotted",
+			"speaker": "player",
+			"position": "left",
+			"text": "Uh oh.  I hope I get through."
+		},
+		"spotted": {
+			"next": "reaction",
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "You there, step over here!"
+		},
+		"reaction": {
+			"next": "question",
+			"speaker": "player",
+			"position": "left",
+			"text": "Act Natural"
+		},
+		"question": {
+			"choices": [
+				{
+					"next": "who",
+					"text": "Is something wrong?"
+				},
+				{
+					"next": "end",
+					"text": "Leave"
+				}
+			],
+			"speaker": "player",
+			"position": "left",
+			"text": "Act natural"
+		},
+		"who": {
+			"next": "whosnext",
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "We're gonna have to give you a \"special\" screening."
+		},
+		"whosnext": {
+			"choices": [
+				{
+					"condition": "",
+					"effect": "",
+					"next": "help",
+					"text": "Yes"
+				},
+				{
+					"condition": "",
+					"effect": "",
+					"next": "end",
+					"text": "No, Thanks"
+				}
+			],
+			"speaker": "snakegirl",
+			"position": "right",
+			"text": "Just a traveler.  Do you need something?"
+		},
+		"end": {
+			"end": true
+		}
+	}
+}

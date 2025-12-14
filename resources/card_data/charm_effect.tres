@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b5c64sxtik55y"]
+
+[ext_resource type="Script" uid="uid://kyirpoons7jq" path="res://resources/card_data/charm_effect.gd" id="1_avmfa"]
+
+[resource]
+script = ExtResource("1_avmfa")
+metadata/_custom_type_script = "uid://c3orp2d0wss6h"

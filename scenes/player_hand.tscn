@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://xwpyp145arbu"]
+
+[ext_resource type="Script" uid="uid://cvwc8gnd4e4fy" path="res://scenes/player_hand.gd" id="1_4moqc"]
+
+[node name="PlayerHand" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4moqc")
+
+[node name="CardContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.003
+anchor_top = 0.617
+anchor_right = 0.997
+anchor_bottom = 0.833407
+offset_left = -1.456
+offset_top = -134.816
+offset_right = 3.45593
+offset_bottom = 106.952
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/separation = 150
+alignment = 1

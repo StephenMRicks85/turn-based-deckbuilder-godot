@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw3pa13sil1yw"]
+
+[ext_resource type="Script" uid="uid://84fcatq3xa4" path="res://player_hud.gd" id="1_mlvnn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mlvnn"]
+bg_color = Color(0.443303, 0.411944, 0.518347, 1)
+
+[node name="PlayerHUD" type="Control"]
+z_index = 8
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -568.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mlvnn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="HPLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "HP: 40 / 40"
+
+[node name="GoldLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Gold: 0"
+
+[node name="DeckButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = " View Deck "
+
+[node name="DeckViewer" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 18.0
+offset_top = 55.0
+offset_right = 1135.0
+offset_bottom = 635.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mlvnn")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DeckViewer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardGrid" type="GridContainer" parent="DeckViewer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Close" type="Button" parent="DeckViewer"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -23.5
+offset_top = -41.0
+offset_right = 24.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Close"
+
+[connection signal="pressed" from="HBoxContainer/DeckButton" to="." method="toggle_deck_viewer"]
+[connection signal="pressed" from="DeckViewer/Close" to="." method="_on_close_pressed"]

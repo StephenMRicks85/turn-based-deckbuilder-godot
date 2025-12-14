@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://g42e8qeex6d8"]
+
+[ext_resource type="Script" uid="uid://g1hd4b50dewu" path="res://resources/card_data/block_effect.gd" id="1_fgs0f"]
+
+[resource]
+script = ExtResource("1_fgs0f")
+block_amount = null
+metadata/_custom_type_script = "uid://c3orp2d0wss6h"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=4 format=3 uid="uid://bpp22tjcotot8"]
+
+[ext_resource type="Texture2D" uid="uid://cibqouk5ktdg6" path="res://intent_buff.png" id="1_dkfq2"]
+[ext_resource type="PackedScene" uid="uid://b80xlbq3tvvta" path="res://scenes/dialog_scene.tscn" id="2_gjirx"]
+[ext_resource type="Script" uid="uid://dcbh4nag5ydxk" path="res://resources/EncounterData.gd" id="3_ksxie"]
+
+[resource]
+script = ExtResource("3_ksxie")
+title = "Intro"
+type = "dialog"
+dialog_path = "res://dialogues/intro.json"
+scene = ExtResource("2_gjirx")
+icon = ExtResource("1_dkfq2")
+is_boss = false
+metadata/_custom_type_script = "uid://dcbh4nag5ydxk"

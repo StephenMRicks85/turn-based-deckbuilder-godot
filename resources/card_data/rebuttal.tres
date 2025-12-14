@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://cjf6x5iosbrsx"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_gcqdk"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_nimd1"]
+
+[resource]
+script = ExtResource("2_nimd1")
+id = "\"rebuttal\""
+display_name = "Rebuttal"
+description = "Deal 6 damage to a single enemy argument"
+energy_cost = 0
+damage_amount = 6
+type = "Attack"
+theme = "Defensive"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_gcqdk")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

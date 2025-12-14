@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://dry2sohmtk6eo"]
+
+[ext_resource type="Script" uid="uid://evavoe4lpfol" path="res://resources/card_data/strike_effect.gd" id="1_ma52r"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_0vpko"]
+
+[resource]
+script = ExtResource("2_0vpko")
+id = "\"powerstrike\""
+display_name = "Power Strike"
+description = "deal 10 damage"
+energy_cost = 1
+damage_amount = 10
+type = "Skill"
+theme = ""
+rarity = "\"Rare\""
+requires_target = true
+effect = ExtResource("1_ma52r")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

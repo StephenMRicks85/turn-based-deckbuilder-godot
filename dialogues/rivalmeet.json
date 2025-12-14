@@ -1,0 +1,78 @@
+{
+  "start": "1",
+  "nodes": {
+	"1": {
+	  "background": "law_school_hallway",
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "You step out of the professor’s office, feeling a little more confident about the defense. As you walk down the hallway, you spot your law school rival, Marcus, leaning against the lockers, smirking.",
+	  "next": "2"
+	},
+	"2": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "Well, well, if it isn’t Mr. ‘Deregulation is the future’ himself. How’d it go in there? You getting ready to shake up the world, or just throwing some ideas around?",
+	  "next": "3"
+	},
+	"3": {
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "I just finished. Defended my thesis on deregulation. It went well, I think. You know, the usual.",
+	  "next": "4"
+	},
+	"4": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "Of course it did. You always work hard, but I’ve got some news too. I just got an offer from a think tank in Washington D.C. They’re practically rolling out the red carpet for me.",
+	  "next": "5"
+	},
+	"5": {
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "A think tank? That’s impressive. What’s it like? I mean, I can’t say I’m surprised.",
+	  "next": "6"
+	},
+	"6": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "Well, yeah. They’re one of the top policy organizations in the country. I’ll be working on the cutting edge of deregulation efforts—advising on airline policy, transportation, and government reform. It’s exactly what I’ve been preparing for.",
+	  "next": "7"
+	},
+	"7": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "I guess not everyone can get those kinds of offers, huh? You’ll be in D.C. someday, but I’m ahead of the game. Lucky me.",
+	  "next": "8"
+	},
+	"8": {
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "That’s great for you. I’m sure you’ll do well. I’m actually planning on heading to D.C. myself, after the defense. The professor recommended I visit some colleagues there.",
+	  "next": "9"
+	},
+	"9": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "Oh? Well, maybe I’ll see you around. But don’t get too comfortable, alright? The real work starts when you’re rubbing elbows with the decision-makers.",
+	  "next": "10"
+	},
+	"10": {
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "I’ll keep that in mind. Good luck with the think tank. Sounds like an exciting opportunity.",
+	  "next": "11"
+	},
+	"11": {
+	  "speaker": "rival",
+	  "position": "right",
+	  "text": "Thanks, I’ll need it. I’m sure you’ll find your way eventually. Just don’t get too lost in your theories. The real world works a lot differently than what you’re learning in those books.",
+	  "next": "12"
+	},
+	"12": {
+	  "speaker": "player",
+	  "position": "left",
+	  "text": "We’ll see about that.",
+	  "next": "end"
+	}
+  }
+}

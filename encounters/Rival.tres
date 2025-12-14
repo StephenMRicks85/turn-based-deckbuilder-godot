@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=4 format=3 uid="uid://dc1h7qkdbswu1"]
+
+[ext_resource type="Texture2D" uid="uid://4ifwr074gku7" path="res://face.png" id="1_tmm1j"]
+[ext_resource type="PackedScene" uid="uid://b80xlbq3tvvta" path="res://scenes/dialog_scene.tscn" id="2_flrse"]
+[ext_resource type="Script" uid="uid://dcbh4nag5ydxk" path="res://resources/EncounterData.gd" id="3_27wpk"]
+
+[resource]
+script = ExtResource("3_27wpk")
+title = "Intro"
+type = "dialog"
+dialog_path = "res://dialogues/rivalmeet.json"
+scene = ExtResource("2_flrse")
+icon = ExtResource("1_tmm1j")
+is_boss = false
+metadata/_custom_type_script = "uid://dcbh4nag5ydxk"

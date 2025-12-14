@@ -1,0 +1,182 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctue0unuawn84"]
+
+[ext_resource type="Script" uid="uid://cea502538nccp" path="res://dialogue_editor.gd" id="1_v7uxl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7uxl"]
+
+[node name="DialogueEditor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7uxl")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TreeVBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="DialogueTree" type="Tree" parent="HBoxContainer/TreeVBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AddNodeButton" type="Button" parent="HBoxContainer/TreeVBoxContainer"]
+layout_mode = 2
+text = "Add Node"
+
+[node name="DeleteNodeButton" type="Button" parent="HBoxContainer/TreeVBoxContainer"]
+layout_mode = 2
+text = "Delete Node"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="IDLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "ID"
+
+[node name="IDField" type="LineEdit" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="SpeakerLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Speaker"
+
+[node name="SpeakerField" type="LineEdit" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="TextLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Text"
+
+[node name="TextField" type="TextEdit" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChoicesLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Choices"
+
+[node name="ChoicesList" type="ItemList" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="EditChoiceButton" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Edit Choice
+"
+
+[node name="AddChoiceButton" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Add Choice
+"
+
+[node name="RemoveChoiceButton" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Remove Choice
+"
+
+[node name="SaveButton" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="LoadButton" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="RenameNodeButton" type="Button" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Rename Node"
+
+[node name="ChoiceModal" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 154.0
+offset_top = 111.0
+offset_right = -165.0
+offset_bottom = -202.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v7uxl")
+
+[node name="MarginContainer" type="MarginContainer" parent="ChoiceModal"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="ChoiceForm" type="VBoxContainer" parent="ChoiceModal/MarginContainer"]
+layout_mode = 2
+
+[node name="ChoiceTextFieldLabel" type="Label" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+text = "Choice Text"
+
+[node name="ChoiceTextField" type="LineEdit" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+
+[node name="NextIDLabel" type="Label" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+text = "Next ID"
+
+[node name="NextIDTextField" type="LineEdit" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+
+[node name="ConditionLabel" type="Label" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+text = "Condition (optional)"
+
+[node name="ConditionTextField" type="LineEdit" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+
+[node name="EffectLabel" type="Label" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+text = "Effect (optional)"
+
+[node name="EffectTextField" type="LineEdit" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+
+[node name="SaveChoiceButton" type="Button" parent="ChoiceModal/MarginContainer/ChoiceForm"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Save Choice"
+
+[connection signal="pressed" from="HBoxContainer/TreeVBoxContainer/AddNodeButton" to="." method="_on_add_node_pressed"]
+[connection signal="pressed" from="HBoxContainer/TreeVBoxContainer/DeleteNodeButton" to="." method="_on_DeleteNodeButton_pressed"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer/IDField" to="." method="_on_IDField_text_submitted"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/EditChoiceButton" to="." method="_on_edit_choice_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/AddChoiceButton" to="." method="_on_add_choice_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/RemoveChoiceButton" to="." method="_on_remove_choice_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/SaveButton" to="." method="_on_save"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/LoadButton" to="." method="_on_load"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/RenameNodeButton" to="." method="_on_RenameButton_pressed"]
+[connection signal="pressed" from="ChoiceModal/MarginContainer/ChoiceForm/SaveChoiceButton" to="." method="_on_save_choice_pressed"]

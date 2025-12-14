@@ -1,0 +1,38 @@
+{
+	"start": "greet",
+	"nodes": {
+		"greet": {
+			"background": "office",
+			"speaker": "merchant",
+			"position": "right",
+			"text": "Welcome, traveler.",
+			"voice": "",
+			"next": "player_reply"
+		},
+		"player_reply": {
+			"speaker": "player",
+			"position": "left",
+			"text": "What is this place?",
+			"next": "choice_1"
+		},
+		"choice_1": {
+			"choices": [
+				{
+					"text": "Fight!",
+					"next": "start_combat"
+				},
+				{
+					"text": "Leave peacefully.",
+					"next": "end"
+				}
+			]
+		},
+		"start_combat": {
+			"trigger": "combat",
+			"next": "end"
+		},
+		"end": {
+			"end": true
+		}
+	}
+}

@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjn7ieklhrhsj"]
+
+[ext_resource type="Script" uid="uid://vdmttw3yc5bs" path="res://scenes/removebutton.gd" id="1_8wcly"]
+
+[node name="removebutton" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8wcly")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(165, 255)
+layout_mode = 0
+offset_right = 164.0
+offset_bottom = 235.0
+text = "Card Removal Service"
+autowrap_mode = 2
+
+[node name="GrayOverlay" type="ColorRect" parent="Button"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.580392, 0.580392, 0.580392, 0.843137)
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -7.0
+offset_top = 192.0
+offset_right = 217.0
+offset_bottom = 245.0
+rotation = -0.811578
+theme_override_colors/font_color = Color(0.899202, 0.0550434, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 34
+text = "PURCHASED"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://dkwo0lq1dioih"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_jmr3l"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_oib2b"]
+
+[resource]
+script = ExtResource("2_oib2b")
+id = "improvise"
+display_name = "Improvise"
+description = "Choose from a set of special cards"
+energy_cost = 1
+damage_amount = 0
+type = "Skill"
+theme = "Manipulation"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_jmr3l")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

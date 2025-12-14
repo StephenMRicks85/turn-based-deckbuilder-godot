@@ -1,0 +1,82 @@
+{
+	"start": "1",
+	"nodes": 
+		{"1": {
+			"background": "office",
+			"speaker": "player",
+			"position": "left",
+			"text": "You are sitting in your thesis advisor's office, as he looks through a draft copy of your thesis",
+			"next": "2"
+		},
+		"2": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "Well, it’s clear you’ve put a lot of work into this",
+			"next": "3"
+		},
+		"3": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "The arguments are well-researched, and you’ve demonstrated a strong grasp of the material. Your approach to deregulation...",
+			"next": "4"
+		},
+		"4": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "Well, let's say it's an interesting one.",
+			"next": "5"
+		},
+		"5": {
+			"speaker": "player",
+			"position": "left",
+			"text": "I—I'm glad you think so",
+			"next": "6"
+		},
+		"6": {
+			"speaker": "player",
+			"position": "left",
+			"text": "But I’m still not sure I’ll be able to defend it well enough.",
+			"next": "7"
+		},
+		"7": {
+			"speaker": "player",
+			"position": "left",
+			"text": "The other professors on the panel… they might have a different perspective, right?",
+			"next": "8"
+		},
+		"8": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "You’re worried about the defense  itself, I see. It’s normal.",
+			"next": "9"
+		},
+		"9": {
+			"speaker": "player",
+			"position": "left",
+			"text": "Yes, the questions my colleagues and I ask will be challenging, but I have no doubt you’ll perform well.",
+			"next": "10"
+		},
+		"10": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "I… I really appreciate that.  I’ve been practicing my arguments, but I’m worried I’ll freeze up or forget something important.",
+			"next": "11"
+		},
+		"11": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "Let’s run a practice debate, shall we? I’ll play devil’s advocate. I’ll challenge your arguments, press you where I think you’ll be vulnerable.",
+			"next": "12"
+		},
+		"12": {
+			"speaker": "professor",
+			"position": "right",
+			"text": "Let’s begin, then. You argue that deregulation is necessary, but what about...",
+			"next": "start_combat"
+		},
+		"start_combat": {
+			"trigger": "combat",
+			"next": "end"
+		},
+	}
+}

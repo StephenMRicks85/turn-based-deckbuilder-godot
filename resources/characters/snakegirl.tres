@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=3 format=3 uid="uid://dk7mc44h3xnfb"]
+
+[ext_resource type="Script" uid="uid://fv4w1xn4kbyq" path="res://resources/SpeakerData.gd" id="1_xw68t"]
+[ext_resource type="Texture2D" uid="uid://dfph2ln5ihjsx" path="res://assets/images/snakegirlresize.png" id="2_0dy10"]
+
+[resource]
+script = ExtResource("1_xw68t")
+sprite = ExtResource("2_0dy10")
+metadata/_custom_type_script = "uid://fv4w1xn4kbyq"

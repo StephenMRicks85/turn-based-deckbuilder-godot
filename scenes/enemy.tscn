@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://thqvguyuaeh3"]
+
+[ext_resource type="Script" uid="uid://poq1xvjjo2od" path="res://scenes/enemy.gd" id="1_md0e3"]
+[ext_resource type="Script" uid="uid://bvfw3i03wpuw" path="res://scenes/enemy_stats.gd" id="2_md0e3"]
+[ext_resource type="Script" uid="uid://c5n6d127cwolq" path="res://scenes/enemy_ai.gd" id="3_4ra3w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+
+[node name="Enemy" type="Node2D"]
+script = ExtResource("1_md0e3")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_md0e3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_md0e3")
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+text = "hp"
+
+[node name="StatusEffectsLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_top = 24.0
+offset_right = 98.0
+offset_bottom = 47.0
+text = "Status effect"
+
+[node name="EnemyAI" type="Node" parent="."]
+script = ExtResource("3_4ra3w")

@@ -1,0 +1,90 @@
+[gd_scene load_steps=3 format=3 uid="uid://b80xlbq3tvvta"]
+
+[ext_resource type="Script" uid="uid://j0fl5carj485" path="res://dialog_scene.gd" id="1_uf7cw"]
+[ext_resource type="Script" uid="uid://b3agjcrf8gu2v" path="res://resources/scripts/dialog_manager.gd" id="2_2h22x"]
+
+[node name="DialogScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uf7cw")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.8
+anchor_bottom = 16.2
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterLeft" type="Node2D" parent="."]
+position = Vector2(245, 332)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterLeft"]
+position = Vector2(54.5, 54.5)
+
+[node name="CharacterRight" type="Node2D" parent="."]
+position = Vector2(847, 302)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterRight"]
+position = Vector2(49, 89)
+
+[node name="DialogUI" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.3
+anchor_top = 0.5
+anchor_right = 28.575
+anchor_bottom = 15.925
+offset_top = 391.0
+offset_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="DialogUI"]
+layout_mode = 0
+offset_right = 1136.0
+offset_bottom = 230.0
+
+[node name="Speaker" type="Label" parent="DialogUI/Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 207.0
+offset_bottom = 54.0
+
+[node name="DialogText" type="RichTextLabel" parent="DialogUI/Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 63.0
+offset_right = 1127.0
+offset_bottom = 217.0
+
+[node name="ChoicesContainer" type="HBoxContainer" parent="DialogUI/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 185.0
+offset_right = -13.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ContinueButton" type="Button" parent="DialogUI/Panel"]
+layout_mode = 0
+offset_left = 1035.0
+offset_top = 186.0
+offset_right = 1114.0
+offset_bottom = 217.0
+text = "Continue"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="DialogManager" type="Node" parent="."]
+script = ExtResource("2_2h22x")
+metadata/_custom_type_script = "uid://b3agjcrf8gu2v"
+
+[connection signal="pressed" from="DialogUI/Panel/ContinueButton" to="." method="_on_continue_pressed"]

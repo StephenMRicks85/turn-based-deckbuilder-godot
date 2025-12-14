@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://dpfs6ki224sv1"]
+
+[ext_resource type="Resource" uid="uid://ddj7i12yfskfp" path="res://resources/card_data/strike_effect.tres" id="1_4nuky"]
+[ext_resource type="Script" uid="uid://bkbphjy3ql5mb" path="res://resources/card_data/CardData.gd" id="2_76jn7"]
+
+[resource]
+script = ExtResource("2_76jn7")
+id = "\"appeal\""
+display_name = "Appeal To Reason"
+description = "Deal 6 damage to a single enemy argument"
+energy_cost = 0
+damage_amount = 6
+type = "Attack"
+theme = "Diplomacy"
+rarity = "\"Common\""
+requires_target = true
+effect = ExtResource("1_4nuky")
+metadata/_custom_type_script = "uid://bkbphjy3ql5mb"

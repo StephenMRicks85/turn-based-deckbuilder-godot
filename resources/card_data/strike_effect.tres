@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ddj7i12yfskfp"]
+
+[ext_resource type="Script" uid="uid://evavoe4lpfol" path="res://resources/card_data/strike_effect.gd" id="1_62jyf"]
+
+[resource]
+script = ExtResource("1_62jyf")
+metadata/_custom_type_script = "uid://c3orp2d0wss6h"

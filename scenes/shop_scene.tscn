@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=3 uid="uid://dev7u2v3qoffa"]
+
+[ext_resource type="Script" uid="uid://bq2qm7jlannvw" path="res://scenes/shop_scene.gd" id="1_r1uou"]
+
+[node name="ShopScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r1uou")
+
+[node name="ShopLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.0
+offset_top = 23.0
+offset_right = 40.0
+offset_bottom = 46.0
+grow_horizontal = 2
+text = "Card Shop"
+
+[node name="ShopGrid" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -510.0
+offset_top = -179.0
+offset_right = 276.0
+offset_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="LeaveButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -59.0
+offset_right = -28.0
+offset_bottom = -28.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Leave"
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -7.0
+offset_top = 192.0
+offset_right = 217.0
+offset_bottom = 245.0
+rotation = -0.811578
+theme_override_colors/font_color = Color(0.899202, 0.0550434, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 34
+text = "PURCHASED"
